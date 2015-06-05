@@ -5,29 +5,32 @@ var state = {
 }
 
 exports.connect = function(url, done) {
-  if (state.db) { return done() }
+  if (state.db) {
+    return done();
+  }
 
   MongoClient.connect(url, function(err, db) {
-    if (err) { return done(err) }
+    if (err) {
+      return done(err)
+    }
 
     state.db = db;
-
     var collection = db.collection('tasks');
-
     done();
+
   });
 }
 
 exports.get = function() {
-  return state.db
+  return state.db;
 }
 
 exports.close = function(done) {
   if (state.db) {
     state.db.close(function(err, result) {
-      state.db = null
-      state.mode = null
-      done(err)
-    })
+      state.db = null;
+      state.mode = null;
+      done(err);
+    });
   }
 }
