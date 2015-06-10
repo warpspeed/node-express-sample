@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/keentreat/node_todo",
   "dependencies": {
-    "express": "^4.12.4"
+    "express": "^4.12.4",
+    "mongodb": "~2.0",
+    "body-parser": "~1.12",
+    "hogan-express": "~0.5"
   }
 }
