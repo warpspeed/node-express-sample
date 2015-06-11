@@ -36,7 +36,7 @@ exports.toggle = function(id, cb) {
 
 exports.clearComplete = function(cb) {
 	var collection = db.get().collection('tasks');
-	collection.remove(function(err, result) {
+	collection.remove({is_complete: true}, function(err, result) {
 		cb(err, result);
 	});
 }
