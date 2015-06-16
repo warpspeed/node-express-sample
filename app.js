@@ -4,7 +4,7 @@ var http    = require('http'),
 	bodyParser = require('body-parser'),
 	MongoClient = require('mongodb').MongoClient;
 
-
+var DB_NAME = 'tasks_db';
 var app = express();
 
 var db = require('./db');
@@ -19,7 +19,7 @@ app.engine('html', require('hogan-express'));
 app.use('/', require('./controllers/tasks'));
 app.use(express.static('public'));
 
-db.connect('mongodb://localhost:27017/tasklist', function(err) {
+db.connect('mongodb://localhost:27017/' + DB_NAME, function(err) {
 	if (err) {
 		console.log('Unable to connect to Mongo');
 		process.exit(1);

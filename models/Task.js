@@ -8,6 +8,7 @@ exports.all = function(cb) {
 	});
 }
 
+
 exports.create = function(name, cb) {
 	var collection = db.get().collection('tasks');
 	var now = Date.now();
@@ -16,7 +17,8 @@ exports.create = function(name, cb) {
 	});
 }
 
-exports.toggle = function(id, cb) {
+
+exports.toggleComplete = function(id, cb) {
 
 	var collection = db.get().collection('tasks');
 	var targetTask;
@@ -40,3 +42,4 @@ exports.clearComplete = function(cb) {
 		cb(err, result);
 	});
 }
+
