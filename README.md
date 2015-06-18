@@ -18,7 +18,7 @@ To clone the repository to your local machine (not in your VM), use the followin
 # RUN THIS COMMAND FROM YOUR LOCAL ENVIRONMENT
 
 cd ~/Sites
-git clone git@github:YOUR_USERNAME/node-express-sample.git warpspeed-express.dev
+git clone git@github.com:YOUR_USERNAME/node-express-example.git warpspeed-express.dev
 ```
 
 ## Create a Database
