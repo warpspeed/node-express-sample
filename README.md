@@ -63,6 +63,20 @@ vagrant ssh
 warpspeed site:create node warpspeed-express.dev --force
 ```
 
+## Install Express.js
+
+Express.js utilizes Node Package Manager (npm) to manage its dependencies. To install the required libraries listed in the `package.json`, run the following commands: 
+
+```
+# RUN THESE COMMANDS FROM YOUR VM
+
+# cd to the project's root directory
+cd ~/sites/warpspeed-express.dev
+
+# install Express.js
+npm install
+```
+
 ## Add a Hosts File Entry
 
 To access your new Express site, you will need to add an entry to your hosts file on your local machine (not your VM). To do so, perform the following:
