@@ -17,9 +17,9 @@
 	},
 	"homepage": "https://github.com/warpspeed/node-express-sample",
 	"dependencies": {
-		"express": "^4.12.4",
-		"mongodb": "~2.0",
-		"body-parser": "~1.12",
+		"express": "^4.15.2",
+		"mongodb": "~2.2.25",
+		"body-parser": "~1.17.1",
 		"hogan-express": "~0.5"
 	}
 }
