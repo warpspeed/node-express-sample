@@ -47,6 +47,9 @@ use tasks_db
 
 # create a dedicated collection
 db.createCollection('tasks')
+
+# Exit mongo
+exit
 ```
 
 This will create a database named "tasks_db" with a collection, roughly equivalent to an SQL database's table, named 'tasks', in which your Task objects will be stored.
