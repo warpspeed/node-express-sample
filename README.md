@@ -22,7 +22,7 @@ To clone the repository to your local machine (not in your VM), use the followin
 # RUN THIS COMMAND FROM YOUR LOCAL ENVIRONMENT
 
 cd ~/Sites
-git clone git@github.com:YOUR_USERNAME/node-express-example.git warpspeed-express.dev
+git clone git@github.com:YOUR_USERNAME/node-express-sample.git warpspeed-express.dev
 ```
 
 ## Create a Database
@@ -79,6 +79,9 @@ cd ~/sites/warpspeed-express.dev
 
 # install Express.js
 npm install
+
+# (on windows)
+npm install --no-bin-links
 ```
 
 ## Add a Hosts File Entry
@@ -90,6 +93,12 @@ To access your new Express site, you will need to add an entry to your hosts fil
 
 # open a terminal and run the following command (for Mac)
 sudo nano /etc/hosts
+
+# using git bash or similar, must be run as admin (windows)
+notepad /c/Windows/System32/Drivers/etc/hosts
+
+# using command prompt, must be run as admin (windows)
+notepad C:\Windows\System32\Drivers\etc\hosts
 
 # add this line to the end of the file
 192.168.88.10 warpspeed-express.dev
